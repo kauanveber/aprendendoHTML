@@ -36,18 +36,22 @@
             text-align: center; 
         }
         .direitos {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            background: rgba(51, 51, 51, 0.8);
+           justify-content: center;
+             background: rgba(51, 51, 51, 0.8);
             color: white;
             padding: 10px 15px;
             border-radius: 5px;
             font-size: 14px;
+            position: fixed;
+             bottom: 0;
+            width: 100%;
+
+            
         }
 
         .direitos p {
-            margin: 5px 0;
+            border-radius: 10px;
+            margin: 10px;
         }
 
         .form-container {
@@ -82,14 +86,20 @@
         }
 
         .consulta-container {
-            width: 80%;
+            display: flex;
+            max-width: 100%;
             margin: 20px auto;
+            justify-content: center;
+            align-items: center;
+            
+            
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            
         }
 
         table, th, td {
@@ -104,6 +114,9 @@
         th {
             background-color: #4CAF50;
             color: white;
+        }
+        nav ul li a:hover {
+            color: #f4a261;
         }
 
     </style>
@@ -165,11 +178,9 @@
         </table>
     </div>
 
-    <ul class="direitos">
-        <li>
+    <div class="direitos">
             <p>&copy; 2025 - Todos os direitos reservados</p>
             <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
-        </li>
-    </ul>
+    </div>
 </body>
 </html>
